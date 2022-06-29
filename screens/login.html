@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Pacifico|Roboto:100,300,400,500,700,900" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=yes, minimum-scale=1.0, maximum-scale=3.0, initial-scale=1.0" />
+    
+    <title>AluraGeek-Login</title>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="../assets/archivos-css/reset.css">
+    <link rel="stylesheet" href="../assets/archivos-css/bases.css">
+    <link rel="stylesheet" href="../assets/archivos-css/cabecera.css" media="all" >
+    <link rel="stylesheet" href="../assets/archivos-css/seccion-login.css" media="all">
+    <link rel="stylesheet" href="../assets/archivos-css/seccion-contacto.css" media="all">
+    <link rel="stylesheet" href="../assets/archivos-css/seccion-footer.css">
+</head>
+<body>
+    
+    <header class="cabecera">
+        <div class="cabecera__container">
+            <div class="cabecera__logo">
+                <a class="cabecera__inicio-pagina" href="../index.html">
+                    <img src="../assets/imagenes/cabecera/Logo.png" class="logo" alt="logo">
+                </a>
+                <div class="cabecera__barra-busqueda">
+                    <input class="barra--busqueda" type="text" placeholder="¿Que desea buscar?">
+                    <i class="fa-solid fa-magnifying-glass icono--lupa"></i>
+                </div>
+            </div>
+            <a class="btn__login" href="login.html">Login</a>
+        </div>
+
+    </header>
+
+    <main> 
+<!-------Inicio de Sesion---------------------------->
+        <section class="seccion__login">
+            
+            <h1 class="login__titulo">Iniciar Sesion</h1>
+            <div class="login__form" >
+
+                <div class="input-form">
+                    <input class="login__form--correo inputs" name="usuario0" id="usuario" type="text" placeholder="Escribe tu usuario" required pattern="" data-tipo="usuario" data-input-email>
+                    <span class="input-message-error"></span>
+                </div>
+ 
+                <div class="input-form">
+                    <input class="login__form--contrasenia inputs" name="contrasenia" id="=contrasenia" type="password" placeholder="Escriba su contraseña" pattern="^([a-z 0-9]{0,8})$" required data-tipo="contrasenia" data-input-pass>
+                    <span class="input-message-error"></span>
+                </div>
+                
+                <a id="btnEnviarLogin" class="login__form--btn-entrar">Entrar</a>
+    
+            </div>
+
+        </section>
+
+<!-------CONTACTO------------------------------------->        
+        <section class="seccion__contacto">
+            <div class="contacto__contenido-logo--informacion">
+                <div class="contacto__contenido--logo">
+                
+                    <a class="" href="#">
+                        <img src="../assets/imagenes/cabecera/Logo.png" class="logo" alt="logo">
+                    </a>
+    
+                </div>
+                
+                <div class="contacto__contenido--informacion">
+                    <a class="informacion" href="./error404.html">Quienes somos</a>
+                    <a class="informacion" href="./error404.html">Politica de privacidad</a>
+                    <a class="informacion" href="./error404.html">Programa de fidelidad</a>
+                    <a class="informacion" href="./error404.html">Nuestra Tiendas</a>
+                    <a class="informacion" href="./error404.html">Quiero ser franquiciado</a>
+                    <a class="informacion" href="./error404.html">Anuncie aqui</a>
+                </div>
+            </div>
+            
+            <div class="contacto__contenido--formulario">
+                <h2 class="formulario__titulo">Hable con nosotros</h2>
+
+                <div class="input-form">
+                    <input class="formulario__nombre inputs" name="nombre" id="nombre" type="text" placeholder="Nombre" required data-tipo="nombre">
+                    <span class="input-message-error"></span>
+                </div>
+                
+                <div class="input-form">
+                    <textarea rows="7" class="formulario__mensaje inputs" name="mensaje" id="mensaje" type="text" placeholder="Escribe tu mensaje" required data-tipo="mensaje"></textarea>
+                    <span class="input-message-error"></span>
+                </div>
+
+                <button class="formulario__btn--enviar">Enviar mensaje</button>
+            </div>
+        </section>
+<!-------FOOTER--------------------------------------->
+        <footer class="seccion__footer">
+            <h2 class="footer__titulo">Desarrollado por Arguello Soledad</h2>
+            <p class="footer__fecha">2022</p>
+        </footer>
+    </main> 
+    
+    <script src="https://kit.fontawesome.com/26f759a832.js" crossorigin="anonymous"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../archivos-js/validar-login.js" type=""></script>
+    <script src="../archivos-js/app.js" type="module"></script>
+</body>

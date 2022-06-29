@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Pacifico|Roboto:100,300,400,500,700,900" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=yes, minimum-scale=1.0, maximum-scale=3.0, initial-scale=1.0" />
+    
+    <title>Todos los productos editables</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">  
+    <link rel="stylesheet" href="../assets/archivos-css/reset.css">
+    <link rel="stylesheet" href="../assets/archivos-css/bases.css">
+    <link rel="stylesheet" href="../assets/archivos-css/cabecera.css" media="all" >
+    <link rel="stylesheet" href="../assets/archivos-css/todos-los-productos.css" media="all">
+    <link rel="stylesheet" href="../assets/archivos-css/seccion-galeria.css" media="all">
+    <link rel="stylesheet" href="../assets/archivos-css/seccion-contacto.css" media="all">
+    <link rel="stylesheet" href="../assets/archivos-css/seccion-footer.css">
+</head>
+<body>
+    
+    <header class="cabecera">
+        <div class="cabecera__container">
+            <div class="cabecera__logo">
+                <a class="cabecera__inicio-pagina" href="../index.html">
+                    <img src="../assets/imagenes/cabecera/Logo.png" class="logo" alt="logo">
+                </a>
+                <div class="cabecera__barra-busqueda">
+                    <input class="barra--busqueda" type="text" placeholder="¿Que desea buscar?">
+                    <i class="fa-solid fa-magnifying-glass icono--lupa"></i>
+                </div>
+            </div>
+            <a class="btn__login" href="login.html" target="_blank">Login</a>
+        </div>
+
+    </header>
+
+    <main>
+        <Section class="todos">
+            <section class="seccion__todos-los-productos">
+
+                <div class="contenido__todos-los-productos">
+                    <h2 class="todos-los-productos__titulo">Todos los productos</h2>
+                    <a class="todos-los-productos__btn" href="./agregar-producto.html">Agregar producto</a>
+                </div>
+    
+            </section>
+         
+            <section class="seccion__galeria seccion__todos-los-productos">
+    
+                
+                <div class="contenido__card" data-todos-prod-editables>
+                       
+            <!-- Aqui van las tarjetas de productos desde el Crud eliminar-productos.js  -->
+                                      
+                </div>
+                
+            </section>
+        </Section>
+
+       <!-------CONTACTO------------------------------------->         
+       <section class="seccion__contacto">
+        <div class="contacto__contenido-logo--informacion">
+            <div class="contacto__contenido--logo">
+            
+                <a class="" href="#">
+                    <img src="./assets/imagenes/cabecera/Logo.png" class="logo" alt="logo">
+                </a>
+
+            </div>
+            
+            <div class="contacto__contenido--informacion">
+                <a class="informacion" href="./error404.html">Quienes somos</a>
+                <a class="informacion" href="./error404.html">Politica de privacidad</a>
+                <a class="informacion" href="./error404.html">Programa de fidelidad</a>
+                <a class="informacion" href="./error404.html">Nuestra Tiendas</a>
+                <a class="informacion" href="./error404.html">Quiero ser franquiciado</a>
+                <a class="informacion" href="./error404.html">Anuncie aqui</a>
+            </div>
+        </div>
+                    
+        <div class="contacto__contenido--formulario">
+            <h2 class="formulario__titulo">Hable con nosotros</h2>
+
+            <div class="input-form">
+                <input class="formulario__nombre inputs" name="nombre" id="nombre" type="text" placeholder="Nombre" required data-tipo="nombre">
+                <span class="input-message-error"></span>
+            </div>
+            
+            <div class="input-form">
+                <textarea rows="7" class="formulario__mensaje inputs" name="mensaje" id="mensaje" type="text" placeholder="Escribe tu mensaje" required data-tipo="mensaje"></textarea>
+                <span class="input-message-error"></span>
+            </div>
+
+            <button class="formulario__btn--enviar">Enviar mensaje</button>
+        </div>
+    </section>
+<!-------FOOTER--------------------------------------->
+        <footer class="seccion__footer">
+            <h2 class="footer__titulo">Desarrollado por Arguello Soledad</h2>
+            <p class="footer__fecha">2022</p>
+        </footer>
+    </main> 
+
+    <script src="https://kit.fontawesome.com/26f759a832.js" crossorigin="anonymous"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="module" src="../archivos-peticiones/eliminar-producto.js"></script>
+    
+</body>
+</html>

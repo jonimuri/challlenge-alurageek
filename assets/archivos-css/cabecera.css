@@ -1,0 +1,105 @@
+.cabecera__container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2% 5%;
+}
+    .cabecera__logo{
+        gap: 20px;
+        display: flex;
+        align-items: center;
+    }
+        .cabecera__barra-busqueda{
+            position: relative;
+        }
+            .barra--busqueda{
+                font-size: 16px;
+                font-weight: 400;
+                background-color: var(--background-gris-claro);
+                border: none;
+                border-radius: 60px;
+                padding: 6% 100% 6% 5%;
+            }
+            .icono--lupa{
+                font-size: 16px;
+                color: var(--color-gris-oscuro);
+                position: absolute;
+                left: 190%;
+                top: 10px;
+            }
+    .btn__login{
+        width: 15%;
+        padding: 1.5%;
+        border: 1px solid var(--color-azul);
+        text-decoration: none;
+        text-align: center;
+        font-size: 16px;
+        font-weight: 600;
+        color: var(--color-azul);
+        background-color: var(--background-fondo-blanco);
+    }
+    .btn__login:hover{
+        cursor: pointer;
+    }
+
+    @media screen and (max-width: 768px) {
+        .cabecera__logo{
+            width: 64%;
+            gap: 0px;
+            
+        }
+            .logo{
+                align-items: center;
+                width: 80%;
+            }
+            .barra--busqueda{
+                padding: 7% 70% 7% 5%;
+                font-size: 14px;
+            }
+            .icono--lupa{
+                left: 155%;
+            }
+        .btn__login{
+            width: 17%;
+            font-size: 14px;
+            padding: 2%;
+        }
+    }
+
+@media screen and (max-width: 480px) {
+    .cabecera__container{
+        flex-wrap: wrap;
+    }
+    
+        .cabecera__logo{
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+            .logo{
+                width: 156%;
+            }
+        .cabecera__barra-busqueda{
+            flex: 1 0 50%;
+        }
+            .barra--busqueda{
+                font-size: 19px;
+                padding: 7% 64% 7% 5%;
+                margin-bottom: 8%;
+            }
+            .icono--lupa{
+                font-size: 19px;
+                left: 140%;
+                top: 15px;
+            }
+        .btn__login{
+            flex: 1 0 50%;
+            padding: 3%;
+            font-size: 30px;
+            margin-bottom: 5%;
+        }
+
+}
+
+
+
+

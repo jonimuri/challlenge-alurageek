@@ -1,0 +1,99 @@
+.seccion__galeria{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--background-palido);
+    width: 100%;
+    padding-bottom: 100px;
+}
+
+    .contenido__productos{
+        display: flex;
+        flex-direction: column;
+        padding-top: 5%;
+        width: 90%;
+
+    }
+        .contenido__titulo{
+            display: flex;
+            justify-content: space-between;
+            width: 98%;
+            /*----aplica al titulo resultado*/
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 5%;
+        }
+            .productos__titulo{
+                font-size: 32px;
+                font-weight: 700;
+                margin-bottom: 2%;
+            }
+            .ver-todos__link{
+                color: var(--color-azul);
+                font-weight: 700;
+                font-size: 16px;
+                text-decoration: none;
+            }
+        
+        .contenido__menu{
+            display: flex;
+            width: 100%;
+        }
+            .productos__menu{
+                display: flex;
+                color: var(--color-gris-intenso);
+                line-height: 1.8;
+                width: 100%;
+                
+            }
+                .productos__lista{
+                    flex: 1 0 0;
+                    /*si puede crecer / si puede encojer/ medida base*/
+                    display: flex;
+                    flex-direction: column;    
+                }
+                    .productos__img{
+                        width: 95%;
+                    }
+                    .producto__descripcion{
+                        font-size: 14px;
+                        font-weight: 500;
+                    }
+                    .producto__precio{
+                        font-size: 16px;
+                        font-weight: 700;
+                    }
+                    .producto__link{
+                        font-size: 16px;
+                        font-weight: 700;
+                        text-decoration: none;
+                        color: var(--color-azul);
+                    }
+
+@media screen and (max-width: 768px){
+    .productos__menu{
+        flex-wrap: wrap;
+     
+     }
+        .productos__titulo{
+            font-size: 32px;
+        }
+         .productos__lista{
+             flex: 1 0 33.33%;
+             margin-bottom: 5%;
+         }     
+}
+@media screen and (max-width: 480px){
+    .productos__menu{
+       flex-wrap: wrap; 
+    }
+    
+        .productos__lista{
+            flex: 1 0 50%;
+        }
+            .producto__precio,
+            .producto__link{
+                font-size: 14px;
+            }
+
+}     

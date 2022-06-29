@@ -1,0 +1,104 @@
+.todos{
+    background-color: var(--background-gris-claro);
+    padding-top: 5%;
+}
+.seccion__todos-los-productos{
+    display: flex;
+    justify-content: center;
+}
+    .contenido__todos-los-productos{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 5%;
+    }
+        .todos-los-productos__titulo{
+            font-size: 32px;
+            font-weight: 700;
+            color: var(--color-gris-intenso);
+        }
+        /*este css aplica al todos los productos editable*/
+        .todos-los-productos__btn{
+            width: 10vw;
+            font-size: 16px;
+            font-weight: 400;
+            padding: 1.5%;
+            text-align: center;
+            color: var(--color-blanco);
+            background-color: var(--background-azul);
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+
+    .contenido__card{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-top: 30px;
+        
+    }
+        .productos__card{/*es el div que contiene un li del crud*/
+            list-style: none;
+            line-height: 1.8;
+            width: 15.5%;
+            padding-bottom: 30px;
+        }
+
+/* aplica a productos.editables.html*/
+
+    .productos__card--editable{
+        display: flex;
+        flex-direction: column;
+        
+    }
+        .productos___editables_iconos{
+            position: absolute;
+            margin-left: 140px;
+            margin-top: 10px;
+        }
+            .productos__editables-icon{
+                font-size: 20px;
+                color: var(--color-blanco);
+                cursor: pointer;
+            }
+            .delete{
+                margin-right: 10px;
+                margin-left: -16px;
+            }
+/*-----------------------------------------*/  
+
+@media screen and (max-width: 768px) {
+        .todos-los-productos__btn {
+            width: 20vw;
+        }
+        .productos__card{
+            width: 33.33%;
+        }
+        .productos___editables_iconos{
+            margin-left: 170px;
+        }
+}
+
+@media screen and (max-width: 480px) {
+    .contenido__todos-los-productos{
+        flex-direction: column;
+    }
+    .todos-los-productos__titulo{
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+    .todos-los-productos__btn{
+        font-size: 14px;
+        width: 30vw;
+        padding: 2%;
+    }
+    .productos__card{
+        width: 50%;
+    }
+    .productos___editables_iconos{
+        margin-left: 170px;
+        margin-top: 10px;
+    }
+
+}
